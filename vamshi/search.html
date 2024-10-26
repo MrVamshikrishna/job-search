@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Jobs</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="search.html">Search Jobs</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="qualification.html">Qualification</a></li>
+            <li><a href="domain.html">Domain</a></li>
+            <li><a href="job_role.html">Job Role</a></li>
+            <li><a href="salary.html">Salary</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search Page -->
+    <section id="search">
+        <h1>Search for Jobs</h1>
+        <form action="search_results.html" method="get">
+            <input type="text" name="query" placeholder="Enter job title or keywords..." required>
+            <select name="job_type">
+                <option value="" disabled selected>Select Job Type</option>
+                <option value="remote">Remote</option>
+                <option value="internship">Internship</option>
+                <option value="full-time">Full-Time</option>
+                <option value="part-time">Part-Time</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+
+        <h2>Recent Job Listings</h2>
+        <div class="job-listings">
+            <div class="job-item">
+                <h3>Frontend Developer</h3>
+                <p>Company: Tech Solutions</p>
+                <p>Location: Remote</p>
+                <p>Type: Full-Time</p>
+                <a href="job_details.html" class="apply-button">View Details</a>
+            </div>
+            <div class="job-item">
+                <h3>Marketing Intern</h3>
+                <p>Company: Creative Agency</p>
+                <p>Location: New York, NY</p>
+                <p>Type: Internship</p>
+                <a href="job_details.html" class="apply-button">View Details</a>
+            </div>
+            <!-- Add more job items as needed -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Get a Job. All rights reserved.</p>
+    </footer>
+</body>
+</html>

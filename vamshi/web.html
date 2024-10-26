@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Job</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="search.html">Search Jobs</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="location.html">location</a></li>
+            <li><a href="qualification.html">qualificatioin</a></li>
+            <li><a href="domain.html">domain</a></li>
+            <li><a href="job role.html">job role</a></li>
+            <li><a href="salary.html">salary</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home">
+        <h1>Welcome to Get a Job</h1>
+        <p>Your one-stop solution for finding remote work, internships, and more.</p>
+    </section>
+
+    <!-- Search Page -->
+    <section id="search">
+        <h2>Search Jobs</h2>
+        <form action="search_results.html" method="get">
+            <input type="text" name="query" placeholder="Search for jobs...">
+            <select name="job_type">
+                <option value="remote">Remote</option>
+                <option value="internship">Internship</option>
+                <option value="full-time">Full-Time</option>
+                <option value="part-time">Part-Time</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <!-- Profile Page -->
+    <section id="profile">
+        <h2>Your Profile</h2>
+        <form action="upload_resume.html" method="post" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Get a Job. All rights reserved.</p>
+    </footer>
+</body>
+</html>
